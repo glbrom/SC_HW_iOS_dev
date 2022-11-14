@@ -1,0 +1,6 @@
+framework module Pods_HW_6_gR {
+  umbrella header "Pods-HW_6_gR-umbrella.h"
+
+  export *
+  module * { export * }
+}
