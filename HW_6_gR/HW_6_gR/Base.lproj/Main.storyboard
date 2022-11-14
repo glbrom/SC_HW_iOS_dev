@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ouk-hG-J6i">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--UI in Storyboard-->
+        <scene sceneID="qJF-tq-eS7">
+            <objects>
+                <viewController id="c7U-Pn-ySh" customClass="UIStoryBoardViewController" customModule="HW_6_gR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y7j-nv-TMa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nra-2Z-Dj6">
+                                <rect key="frame" x="163.5" y="398.5" width="87.5" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="8w0-Ei-p77"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Run!">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="runButton:" destination="c7U-Pn-ySh" eventType="touchUpInside" id="Eex-JH-RiM"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dg9-rk-1i5">
+                                <rect key="frame" x="20" y="763" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LRh-nR-TLF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Nra-2Z-Dj6" firstAttribute="centerX" secondItem="LRh-nR-TLF" secondAttribute="centerX" id="Qmv-yp-yg6"/>
+                            <constraint firstItem="Nra-2Z-Dj6" firstAttribute="centerY" secondItem="LRh-nR-TLF" secondAttribute="centerY" id="twN-uq-kOk"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="UI in Storyboard" id="3sx-bM-PVt" userLabel="UI in Storyboard"/>
+                    <connections>
+                        <outlet property="yellowCircleView" destination="dg9-rk-1i5" id="6lU-ro-hcl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nDT-R8-j4T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1493" y="425"/>
+        </scene>
+        <!--Lottie-->
+        <scene sceneID="GeM-ZH-rl7">
+            <objects>
+                <viewController id="hZ4-QN-plM" customClass="LottieViewController" customModule="HW_6_gR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bAe-6l-MUT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoX-OA-Fwf">
+                                <rect key="frame" x="159.5" y="661" width="95" height="50"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start!">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="rJC-j7-aVG" kind="show" id="JuO-sf-Th1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zbs-C2-9Wb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VoX-OA-Fwf" firstAttribute="centerX" secondItem="zbs-C2-9Wb" secondAttribute="centerX" id="XXe-Bx-HJt"/>
+                            <constraint firstItem="VoX-OA-Fwf" firstAttribute="centerY" secondItem="zbs-C2-9Wb" secondAttribute="centerY" constant="257.5" id="hLf-qp-nrD"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Lottie" id="5Zb-a5-5HJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="blQ-rT-PsU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-726.08695652173924" y="-30.133928571428569"/>
+        </scene>
+        <!--Lottie Animation View Controller-->
+        <scene sceneID="3f1-uX-tKN">
+            <objects>
+                <viewController storyboardIdentifier="LottieAnimationViewController" id="rJC-j7-aVG" customClass="LottieAnimationViewController" customModule="HW_6_gR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fpb-4s-elz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="BqU-6q-dpc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="K2J-fg-jWy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h9n-lx-G0l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-46" y="-30"/>
+        </scene>
+        <!--UIKit Animations-->
+        <scene sceneID="lG4-wf-wbv">
+            <objects>
+                <viewController id="C8M-I1-1bb" customClass="UIKitAnimationViewController" customModule="HW_6_gR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SIr-Qm-WUu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoW-km-oxs">
+                                <rect key="frame" x="141.5" y="128" width="131" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="n2I-ji-n7J"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Bounce!">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="bounceButton:" destination="C8M-I1-1bb" eventType="touchUpInside" id="06N-5Y-TgY"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" semanticContentAttribute="playback" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KSL-e2-Y9Q">
+                                <rect key="frame" x="157" y="633" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fou-4M-wvb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PoW-km-oxs" firstAttribute="centerX" secondItem="Fou-4M-wvb" secondAttribute="centerX" id="brf-XH-Fwo"/>
+                            <constraint firstItem="PoW-km-oxs" firstAttribute="top" secondItem="Fou-4M-wvb" secondAttribute="top" constant="84" id="v5F-Um-n7O"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="UIKit Animations" id="DD5-xl-xT9" userLabel="UIKit"/>
+                    <connections>
+                        <outlet property="circle" destination="KSL-e2-Y9Q" id="dgx-Uo-3dR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zbj-kQ-iRh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1494.2028985507247" y="-405.13392857142856"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="pkf-b3-D5O">
+            <objects>
+                <tabBarController id="Ouk-hG-J6i" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JGC-fX-fTa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="C8M-I1-1bb" kind="relationship" relationship="viewControllers" id="hUv-Yh-4Fw"/>
+                        <segue destination="c7U-Pn-ySh" kind="relationship" relationship="viewControllers" id="KXJ-Li-7KI"/>
+                        <segue destination="hZ4-QN-plM" kind="relationship" relationship="viewControllers" id="kiw-ow-cZl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DoK-OG-q5g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2272" y="-30"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
